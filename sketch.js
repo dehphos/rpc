@@ -207,12 +207,12 @@ function setup() {
   frameRate(60)
   fill(255)
   createCanvas(ww +120, wh + 100);
+  cssscale = parseFloat(window.getComputedStyle(document.documentElement).getPropertyValue('--zoomscale'));
+  zoomslider = createSlider(0.01,1,cssscale,0.01)
   createSliderNames()
   reset()
 }
 function createSliderNames(){
-  cssscale = parseFloat(window.getComputedStyle(document.documentElement).getPropertyValue('--zoomscale'));
-  zoomslider = createSlider(0.01,1,cssscale,0.01)
   speedrandomnesslider = createSlider(0,5,3,0.5)
   playercount = createSlider(3,1000,30,1)
   scaleslider = createSlider(0.2,8,2,0.2)
