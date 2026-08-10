@@ -72,7 +72,7 @@ function recalculateMouseCoordinates(){
   posxmouse = mouseX_c
 }
 function setStartingPlayersRandomly(count, storearray){
-  for (var i = 0; i<count ; i++ ){8
+  for (var i = 0; i<count ; i++ ){
     var cls = Math.floor(Math.random()*3)
     p = new Player((Math.random()*(ww-100))+50,(Math.random()*(wh-100))+50,cls,i)
     if(cls == 0){rocks.push(p)}
